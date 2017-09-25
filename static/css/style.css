@@ -1,0 +1,124 @@
+@font-face {
+    font-family: eve;
+    src: url('../font/eve.ttf') format('truetype');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: eve;
+    user-select:none;
+}
+
+.top_fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrap {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 800px;
+    min-width: 1000px;
+    background: #ffffff;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    background-color: black;
+}
+
+.nav_top {
+    font-family: eve;
+    -webkit-app-region: drag;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 0 30px 0 white;
+    font-size: 30px;
+    background-color: white;
+}
+
+.title {
+    border-radius: 10px 10px 0 0;
+    margin: 5px 0 0 100px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    bottom : 0px;
+    padding: 0px;
+    margin: 20px 0 0 150px;
+    font-size: 30px;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 15px 15px 15px;
+}
+
+a{
+    text-decoration:none; 
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  
+a {
+    color:#ffffff;
+  }
+a:hover{
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate; 
+    cursor: pointer;
+  }
+
+  p a:hover{
+    color:#ffffff;  
+    }
+
+    @keyframes neon1 {
+        from {
+          text-shadow: 0 0 10px #fff,
+                     0 0 20px  #fff,
+                     0 0 30px  #fff,
+                     0 0 40px  #ffffff,
+                     0 0 70px  #ffffff,
+                     0 0 80px  #ffffff,
+                     0 0 100px #ffffff,
+                     0 0 150px #ffffff;
+        }
+        to {
+          text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #fff,
+                     0 0 20px #ffffff,
+                     0 0 35px #ffffff,
+                     0 0 40px #ffffff,
+                     0 0 50px #ffffff,
+                     0 0 75px #ffffff;
+        }
+      }
+      
